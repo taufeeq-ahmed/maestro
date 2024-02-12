@@ -1,6 +1,10 @@
 .intro{
     margin-top: 36px;
     max-width: 720px;
+    color: #425466;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .intro_heading{

@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './intro.module.css';
+import Avatar from '../Avatar/Avatar';
 
 function Intro() {
     return (
         <section className={styles.intro}>
+            <Avatar />
             <p className={styles.intro_description}>
                 Hey there ! This is
                 {' '}
