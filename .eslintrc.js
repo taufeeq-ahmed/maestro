@@ -24,5 +24,7 @@ module.exports = {
     },
     rules: {
         indent: ['error', 4],
+        'react/prop-types': 'off',
+        'react/jsx-indent': [2, 4, { checkAttributes: true, indentLogicalExpressions: true }],
     },
 };
