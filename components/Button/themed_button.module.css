@@ -1,13 +1,20 @@
 .button{
     font-size: 20px;
-    
+
     border-radius: 24px;
     border:none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
+    transition: all 0.3s ease;
 }
+
+.button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .linear{
     padding: 12px 24px;
     
@@ -42,3 +49,4 @@
         min-width: none;
     }
 }
+
