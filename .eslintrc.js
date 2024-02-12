@@ -27,5 +27,6 @@ module.exports = {
         'react/prop-types': 'off',
         'react/jsx-indent': [2, 4, { checkAttributes: true, indentLogicalExpressions: true }],
         'react/jsx-indent-props': 'off',
+        'import/no-unresolved': 'off',
     },
 };
