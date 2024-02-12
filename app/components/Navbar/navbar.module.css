@@ -21,10 +21,10 @@
     align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width:475px) {
     .navbar{
         width: fit-content;
-        padding: 0px 12px;
+        padding: 12px;
     }
 
     .nav_links{

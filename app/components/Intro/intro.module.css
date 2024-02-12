@@ -8,13 +8,39 @@
 }
 
 .intro_heading{
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 400;
     margin-bottom: 12px;
 }
 
 .intro_description{
+    font-weight: 500;
     font-size: 24px;
     line-height: 1.5;
     text-align: center;
+    margin-top: 12px;
+}
+
+.action_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 24px;
+}
+.social_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+@media (max-width:767px) {
+    .intro_description{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .action_buttons{
+        flex-direction: column;
+    }
 }

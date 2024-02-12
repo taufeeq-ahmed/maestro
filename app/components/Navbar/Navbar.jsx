@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <nav className={styles.navbar}>
             <ul className={styles.nav_links}>
-                <li>@Maestro</li>
+                <li>About</li>
                 <li>Projects</li>
                 <li>Skills</li>
                 <li>Experience</li>
