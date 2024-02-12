@@ -6,7 +6,7 @@ import Link from 'next/link';
 import styles from './themed_button.module.css';
 
 function ThemedButton({
-    type = 'colored', text = '', icon, shape = 'linear', link, handleClick,
+    type = 'colored', text = '', icon, shape = 'linear', link, handleClick, style = {},
 }) {
     const typeClass = type === 'acrylic' ? styles.acrylic_button : styles.colored_button;
     const shapeClass = shape === 'circular' ? styles.circular : styles.linear;
@@ -17,6 +17,7 @@ function ThemedButton({
                 onClick={handleClick}
                 className={`${styles.button} ${typeClass} ${shapeClass}`}
                 type="button"
+                style={style}
             >
                 {text}
                 {icon}
@@ -29,6 +30,7 @@ function ThemedButton({
             <button
                 className={`${styles.button} ${typeClass} ${shapeClass}`}
                 type="button"
+                style={style}
             >
                 {text}
                 {icon}

@@ -40,6 +40,7 @@ function Intro() {
                 <ThemedButton
                     text="Contact me Here"
                     icon={<MdArrowRightAlt />}
+                    style={{ color: '#fff' }}
                 />
                 <ThemedButton
                     text="Download Resume"
