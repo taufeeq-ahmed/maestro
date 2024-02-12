@@ -1,4 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
+
+'use client';
+
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdArrowRightAlt, MdFileDownload } from 'react-icons/md';
@@ -8,6 +11,20 @@ import ThemedButton from '../Button/ThemedButton';
 import { githubLink, linkedinLink } from '../../app/constants/constants';
 
 function Intro() {
+    const handleDownload = () => {
+        const pdfPath = '/assets/imjst.resume.pdf';
+
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.target = '_blank';
+        link.download = 'taufeeq.resume.pdf';
+
+        document.body.appendChild(link);
+        link.click();
+
+        document.body.removeChild(link);
+    };
+
     return (
         <section className={styles.intro}>
             <Avatar />
@@ -28,6 +45,7 @@ function Intro() {
                     text="Download Resume"
                     type="acrylic"
                     icon={<MdFileDownload />}
+                    handleClick={handleDownload}
                 />
                 <div className={styles.social_links}>
                     <ThemedButton
