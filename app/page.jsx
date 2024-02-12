@@ -18,6 +18,11 @@ export default function Home() {
         <>
             <Navbar />
             <Intro />
+            <Intro />
+            <Intro />
+            <Intro />
+            <Intro />
+            <Intro />
         </>
     );
 }
