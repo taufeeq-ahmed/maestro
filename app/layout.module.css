@@ -1,0 +1,16 @@
+.main_content{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    color: #000;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    .main_content{
+        padding: 0rem;
+    }
+}
