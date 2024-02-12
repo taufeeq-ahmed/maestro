@@ -1,8 +1,12 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
+import Intro from './components/Intro/Intro';
 
 export default function Home() {
     return (
-        <Navbar />
+        <>
+            <Navbar />
+            <Intro />
+        </>
     );
 }
