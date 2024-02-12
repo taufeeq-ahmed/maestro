@@ -1,7 +1,7 @@
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import React from 'react';
-import ParticlesLayout from './ParticlesLayout';
+import ParticlesLayout from '../components/ParticlesLayout/ParticlesLayout';
 import styles from './layout.module.css';
 
 const montserrat = Montserrat({ subsets: ['latin'] });

@@ -5,7 +5,7 @@ import { MdArrowRightAlt, MdFileDownload } from 'react-icons/md';
 import styles from './intro.module.css';
 import Avatar from '../Avatar/Avatar';
 import ThemedButton from '../Button/ThemedButton';
-import { githubLink, linkedinLink } from '../../constants/constants';
+import { githubLink, linkedinLink } from '../../app/constants/constants';
 
 function Intro() {
     return (
