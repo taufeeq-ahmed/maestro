@@ -15,10 +15,23 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    gap: 36px;
+    gap: 12px;
     list-style-type: none;
     display: flex;
     align-items: center;
+}
+
+.nav_link{
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.nav_link:hover{
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+.active_link{
+    color: var(--theme-color-primary);
 }
 
 @media (max-width:475px) {
@@ -28,7 +41,11 @@
     }
 
     .nav_links{
-        gap: 8px;
+        gap: 4px;
         font-size: 12px;
+    }
+
+    .nav_link{
+        padding: 2px;
     }
 }
