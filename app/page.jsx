@@ -7,6 +7,8 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Intro from '../components/Intro/Intro';
 import useTimeout from '@/hooks/useTimeout';
+import Skills from '@/components/Skills/Skills';
+import { mySkills } from './constants/constants';
 
 export default function Home() {
     const sayUnderConstruction = () => {
@@ -18,6 +20,7 @@ export default function Home() {
         <>
             <Navbar />
             <Intro />
+            <Skills skills={mySkills} />
         </>
     );
 }

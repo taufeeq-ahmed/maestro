@@ -34,7 +34,7 @@
     backdrop-filter: blur(20px); 
     -webkit-backdrop-filter: blur(20px); 
     color: #424466;
-    border: 1px solid #424466 ;
+    border: 1px solid #0000001a ;
 }
 
 @media (max-width:767px) {
