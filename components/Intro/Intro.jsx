@@ -3,12 +3,12 @@
 'use client';
 
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { MdArrowRightAlt, MdFileDownload } from 'react-icons/md';
 import styles from './intro.module.css';
 import Avatar from '../Avatar/Avatar';
 import ThemedButton from '../Button/ThemedButton';
-import { githubLink, linkedinLink } from '../../app/constants/constants';
+import { githubLink } from '../../app/constants/constants';
 
 function Intro() {
     const handleDownload = () => {
@@ -54,12 +54,6 @@ function Intro() {
                         type="acrylic"
                         icon={<FaGithub />}
                         link={githubLink}
-                    />
-                    <ThemedButton
-                        shape="circular"
-                        type="acrylic"
-                        icon={<FaLinkedin />}
-                        link={linkedinLink}
                     />
                 </div>
 

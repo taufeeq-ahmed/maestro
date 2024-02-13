@@ -9,6 +9,7 @@ import Intro from '../components/Intro/Intro';
 import useTimeout from '@/hooks/useTimeout';
 import Skills from '@/components/Skills/Skills';
 import { mySkills } from './constants/constants';
+import Contact from '@/components/Contact/Contact';
 
 export default function Home() {
     const sayUnderConstruction = () => {
@@ -21,6 +22,7 @@ export default function Home() {
             <Navbar />
             <Intro />
             <Skills skills={mySkills} />
+            <Contact />
         </>
     );
 }
