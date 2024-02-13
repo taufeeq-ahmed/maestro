@@ -30,6 +30,7 @@
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #0000001a;
     padding: 6px 12px;
+
     font-size: 18px;
     border-radius: 6px;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -38,4 +39,15 @@
 .skill:hover {
     transform: scale(1.1);
     cursor: default;
+}
+
+
+@media (max-width:767px) {
+    .section_heading{
+        font-size: 26px;
+    }
+
+    .skill{
+        font-size: 16px;
+    }
 }
