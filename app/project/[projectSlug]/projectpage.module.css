@@ -1,0 +1,12 @@
+.project_page{
+    border: 1px solid red;
+    margin-top: 56px;
+    width: 800px;
+}
+
+@media (max-width:767px) {
+    .project_page{
+        width: 100%;
+        margin-top: 32px;
+    }
+}
