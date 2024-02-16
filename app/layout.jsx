@@ -2,7 +2,7 @@ import { Montserrat } from 'next/font/google';
 import './globals.css';
 import React from 'react';
 import { Toaster } from 'sonner';
-import ParticlesLayout from '../components/ParticlesLayout/ParticlesLayout';
+
 import styles from './layout.module.css';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={montserrat.className}>
-                <ParticlesLayout />
+
                 <Toaster richColors position="bottom-center" />
                 <main className={styles.main_content}>
                     {children}
