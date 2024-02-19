@@ -3,9 +3,13 @@
 'use client';
 
 import React, { useState } from 'react';
+import dynamic from 'next/dynamic';
 import styles from './page.module.css';
-import RTeditor from '@/components/RTeditor/RTeditor';
 import supabase from '@/lib/supabase';
+
+const RTeditor = dynamic(() => import('@/components/RTeditor/RTeditor'), {
+    ssr: false,
+});
 
 function PageNewProject() {
     const [projectData, setProjectData] = useState({
