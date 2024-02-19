@@ -1,0 +1,46 @@
+.page_new_project {
+    max-width: 900px;
+    font-size: 14px;
+
+    .new_project_form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .name,
+    .description {
+        width: 100%;
+        border: 1px solid #0000001a;
+        height: 48px;
+        font-size: 14px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+
+    .label {
+        font-size: 24px;
+        margin: 0;
+        margin-top: 24px;
+    }
+
+    .submit_button {
+        padding: 12px 24px;
+        background-color: black;
+        color: azure;
+        border: none;
+        margin-top: 36px;
+        font-size: 16px;
+        font-family: 700;
+    }
+
+    .submit_button_container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
