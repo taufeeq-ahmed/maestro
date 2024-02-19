@@ -18,7 +18,12 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={montserrat.className}>
 
-                <Toaster richColors position="bottom-center" />
+                <Toaster
+                    richColors
+                    closeButton
+                    position="top-right"
+                />
+
                 <main className={styles.main_content}>
                     {children}
                 </main>
