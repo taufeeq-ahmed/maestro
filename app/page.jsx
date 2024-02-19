@@ -4,12 +4,12 @@
 
 import { toast } from 'sonner';
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
 import Intro from '../components/Intro/Intro';
 import useTimeout from '@/hooks/useTimeout';
-import Skills from '@/components/Skills/Skills';
-import { mySkills } from './constants/constants';
+
 import Contact from '@/components/Contact/Contact';
+import styles from './page.module.css';
+import DeveloperDescription from '@/components/DeveloperDescription/DeveloperDescription';
 
 export default function Home() {
     const sayUnderConstruction = () => {
@@ -18,11 +18,22 @@ export default function Home() {
     useTimeout(sayUnderConstruction, 2000);
 
     return (
-        <>
-            <Navbar />
-            <Intro />
-            <Skills skills={mySkills} />
-            <Contact />
-        </>
+        <div className={styles.page}>
+            <div className={styles.left}>
+                <Intro />
+                <Contact />
+            </div>
+
+            <div className={styles.right}>
+                <DeveloperDescription />
+                <DeveloperDescription />
+
+                <DeveloperDescription />
+                {' '}
+                <DeveloperDescription />
+                <DeveloperDescription />
+
+            </div>
+        </div>
     );
 }

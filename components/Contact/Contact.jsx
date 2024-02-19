@@ -1,34 +1,53 @@
 /* eslint-disable import/extensions */
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa';
-import { MdOutlineMailOutline } from 'react-icons/md';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdFileDownload, MdOutlineMailOutline } from 'react-icons/md';
 import styles from './constact.module.css';
-import { gmailLink, linkedinLink } from '@/app/constants/constants';
+import { githubLink, gmailLink, linkedinLink } from '@/app/constants/constants';
 import ThemedButton from '../Button/ThemedButton';
 
 function Contact() {
+    const handleDownload = () => {
+        const pdfPath = '/assets/imjst.resume.pdf';
+
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.target = '_blank';
+        link.download = 'taufeeq.resume.pdf';
+
+        document.body.appendChild(link);
+        link.click();
+
+        document.body.removeChild(link);
+    };
+
     return (
         <section className={styles.contact}>
-            <h3 className={styles.section_heading}>
-                Contact
-            </h3>
-            <p className={styles.section_subheading}>
-                Feel free to conatct me for any business related dicussions
-            </p>
-            <div className={styles.social_links}>
-                <ThemedButton
-                    shape="circular"
-                    type="acrylic"
-                    icon={<FaLinkedin />}
-                    link={linkedinLink}
-                />
-                <ThemedButton
-                    shape="circular"
-                    type="acrylic"
-                    icon={<MdOutlineMailOutline />}
-                    link={gmailLink}
-                />
-            </div>
+            <ThemedButton
+                text="Resume"
+                type="acrylic"
+                icon={<MdFileDownload />}
+                handleClick={handleDownload}
+            />
+
+            <ThemedButton
+                shape="circular"
+                type="acrylic"
+                icon={<FaGithub />}
+                link={githubLink}
+            />
+            <ThemedButton
+                shape="circular"
+                type="acrylic"
+                icon={<FaLinkedin />}
+                link={linkedinLink}
+            />
+            <ThemedButton
+                shape="circular"
+                type="acrylic"
+                icon={<MdOutlineMailOutline />}
+                link={gmailLink}
+            />
         </section>
     );
 }
