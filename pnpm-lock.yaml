@@ -5,21 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@lexical/react':
-    specifier: ^0.13.1
-    version: 0.13.1(lexical@0.13.1)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.12)
   '@supabase/supabase-js':
     specifier: ^2.39.7
     version: 2.39.7
-  '@tsparticles/react':
-    specifier: ^3.0.0
-    version: 3.0.0(@tsparticles/engine@3.2.1)(react-dom@18.2.0)(react@18.2.0)
-  '@tsparticles/slim':
-    specifier: ^3.2.1
-    version: 3.2.1
-  axios:
-    specifier: ^1.6.7
-    version: 1.6.7
   jodit-react:
     specifier: ^4.0.9
     version: 4.0.9(react-dom@18.2.0)(react@18.2.0)
@@ -71,6 +59,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.1
+    dev: true
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.56.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
@@ -128,231 +117,6 @@ packages:
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
-
-  /@lexical/clipboard@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-gMSbVeqb7S+XAi/EMMlwl+FCurLPugN2jAXcp5k5ZaUd7be8B+iupbYdoKkjt4qBhxmvmfe9k46GoC0QOPl/nw==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/html': 0.13.1(lexical@0.13.1)
-      '@lexical/list': 0.13.1(lexical@0.13.1)
-      '@lexical/selection': 0.13.1(lexical@0.13.1)
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/code@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-QK77r3QgEtJy96ahYXNgpve8EY64BQgBSnPDOuqVrLdl92nPzjqzlsko2OZldlrt7gjXcfl9nqfhZ/CAhStfOg==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-      prismjs: 1.29.0
-    dev: false
-
-  /@lexical/dragon@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-aNlqfif4//jW7gOxbBgdrbDovU6m3EwQrUw+Y/vqRkY+sWmloyAUeNwCPH1QP3Q5cvfolzOeN5igfBljsFr+1g==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/hashtag@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-Dl0dUG4ZXNjYYuAUR0GMGpLGsA+cps2/ln3xEmy28bZR0sKkjXugsu2QOIxZjYIPBewDrXzPcvK8md45cMYoSg==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/history@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-cZXt30MalEEiRaflE9tHeGYnwT1xSDjXLsf9M409DSU9POJyZ1fsULJrG1tWv2uFQOhwal33rve9+MatUlITrg==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/html@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-XkZrnCSHIUavtpMol6aG8YsJ5KqC9hMxEhAENf3HTGi3ocysCByyXOyt1EhEYpjJvgDG4wRqt25xGDbLjj1/sA==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/selection': 0.13.1(lexical@0.13.1)
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/link@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-7E3B2juL2UoMj2n+CiyFZ7tlpsdViAoIE7MpegXwfe/VQ66wFwk/VxGTa/69ng2EoF7E0kh+SldvGQDrWAWb1g==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/list@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-6U1pmNZcKLuOWiWRML8Raf9zSEuUCMlsOye82niyF6I0rpPgYo5UFghAAbGISDsyqzM1B2L4BgJ6XrCk/dJptg==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/mark@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-dW27PW8wWDOKFqXTBUuUfV+umU0KfwvXGkPUAxRJrvwUWk5RKaS48LhgbNlQ5BfT84Q8dSiQzvbaa6T40t9a3A==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/markdown@0.13.1(@lexical/clipboard@0.13.1)(@lexical/selection@0.13.1)(lexical@0.13.1):
-    resolution: {integrity: sha512-6tbdme2h5Zy/M88loVQVH5G0Nt7VMR9UUkyiSaicyBRDOU2OHacaXEp+KSS/XuF+d7TA+v/SzyDq8HS77cO1wA==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/code': 0.13.1(lexical@0.13.1)
-      '@lexical/link': 0.13.1(lexical@0.13.1)
-      '@lexical/list': 0.13.1(lexical@0.13.1)
-      '@lexical/rich-text': 0.13.1(@lexical/clipboard@0.13.1)(@lexical/selection@0.13.1)(@lexical/utils@0.13.1)(lexical@0.13.1)
-      '@lexical/text': 0.13.1(lexical@0.13.1)
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    transitivePeerDependencies:
-      - '@lexical/clipboard'
-      - '@lexical/selection'
-    dev: false
-
-  /@lexical/offset@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-j/RZcztJ7dyTrfA2+C3yXDzWDXV+XmMpD5BYeQCEApaHvlo20PHt1BISk7RcrnQW8PdzGvpKblRWf//c08LS9w==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/overflow@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-Uw34j+qG2UJRCIR+bykfFMduFk7Pc4r/kNt8N1rjxGuGXAsreTVch1iOhu7Ev6tJgkURsduKuaJCAi7iHnKl7g==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/plain-text@0.13.1(@lexical/clipboard@0.13.1)(@lexical/selection@0.13.1)(@lexical/utils@0.13.1)(lexical@0.13.1):
-    resolution: {integrity: sha512-4j5KAsMKUvJ8LhVDSS4zczbYXzdfmgYSAVhmqpSnJtud425Nk0TAfpUBLFoivxZB7KMoT1LGWQZvd47IvJPvtA==}
-    peerDependencies:
-      '@lexical/clipboard': 0.13.1
-      '@lexical/selection': 0.13.1
-      '@lexical/utils': 0.13.1
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/clipboard': 0.13.1(lexical@0.13.1)
-      '@lexical/selection': 0.13.1(lexical@0.13.1)
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/react@0.13.1(lexical@0.13.1)(react-dom@18.2.0)(react@18.2.0)(yjs@13.6.12):
-    resolution: {integrity: sha512-Sy6EL230KAb0RZsZf1dZrRrc3+rvCDQWltcd8C/cqBUYlxsLYCW9s4f3RB2werngD/PtLYbBB48SYXNkIALITA==}
-    peerDependencies:
-      lexical: 0.13.1
-      react: '>=17.x'
-      react-dom: '>=17.x'
-    dependencies:
-      '@lexical/clipboard': 0.13.1(lexical@0.13.1)
-      '@lexical/code': 0.13.1(lexical@0.13.1)
-      '@lexical/dragon': 0.13.1(lexical@0.13.1)
-      '@lexical/hashtag': 0.13.1(lexical@0.13.1)
-      '@lexical/history': 0.13.1(lexical@0.13.1)
-      '@lexical/link': 0.13.1(lexical@0.13.1)
-      '@lexical/list': 0.13.1(lexical@0.13.1)
-      '@lexical/mark': 0.13.1(lexical@0.13.1)
-      '@lexical/markdown': 0.13.1(@lexical/clipboard@0.13.1)(@lexical/selection@0.13.1)(lexical@0.13.1)
-      '@lexical/overflow': 0.13.1(lexical@0.13.1)
-      '@lexical/plain-text': 0.13.1(@lexical/clipboard@0.13.1)(@lexical/selection@0.13.1)(@lexical/utils@0.13.1)(lexical@0.13.1)
-      '@lexical/rich-text': 0.13.1(@lexical/clipboard@0.13.1)(@lexical/selection@0.13.1)(@lexical/utils@0.13.1)(lexical@0.13.1)
-      '@lexical/selection': 0.13.1(lexical@0.13.1)
-      '@lexical/table': 0.13.1(lexical@0.13.1)
-      '@lexical/text': 0.13.1(lexical@0.13.1)
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      '@lexical/yjs': 0.13.1(lexical@0.13.1)(yjs@13.6.12)
-      lexical: 0.13.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-error-boundary: 3.1.4(react@18.2.0)
-    transitivePeerDependencies:
-      - yjs
-    dev: false
-
-  /@lexical/rich-text@0.13.1(@lexical/clipboard@0.13.1)(@lexical/selection@0.13.1)(@lexical/utils@0.13.1)(lexical@0.13.1):
-    resolution: {integrity: sha512-HliB9Ync06mv9DBg/5j0lIsTJp+exLHlaLJe+n8Zq1QNTzZzu2LsIT/Crquk50In7K/cjtlaQ/d5RB0LkjMHYg==}
-    peerDependencies:
-      '@lexical/clipboard': 0.13.1
-      '@lexical/selection': 0.13.1
-      '@lexical/utils': 0.13.1
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/clipboard': 0.13.1(lexical@0.13.1)
-      '@lexical/selection': 0.13.1(lexical@0.13.1)
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/selection@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-Kt9eSwjxPznj7yzIYipu9yYEgmRJhHiq3DNxHRxInYcZJWWNNHum2xKyxwwcN8QYBBzgfPegfM/geqQEJSV1lQ==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/table@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-VQzgkfkEmnvn6C64O/kvl0HI3bFoBh3WA/U67ALw+DS11Mb5CKjbt0Gzm/258/reIxNMpshjjicpWMv9Miwauw==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/utils': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/text@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-NYy3TZKt3qzReDwN2Rr5RxyFlg84JjXP2JQGMrXSSN7wYe73ysQIU6PqdVrz4iZkP+w34F3pl55dJ24ei3An9w==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/utils@0.13.1(lexical@0.13.1):
-    resolution: {integrity: sha512-AtQQKzYymkbOaQxaBXjRBS8IPxF9zWQnqwHTUTrJqJ4hX71aIQd/thqZbfQETAFJfC8pNBZw5zpxN6yPHk23dQ==}
-    peerDependencies:
-      lexical: 0.13.1
-    dependencies:
-      '@lexical/list': 0.13.1(lexical@0.13.1)
-      '@lexical/selection': 0.13.1(lexical@0.13.1)
-      '@lexical/table': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-    dev: false
-
-  /@lexical/yjs@0.13.1(lexical@0.13.1)(yjs@13.6.12):
-    resolution: {integrity: sha512-4GbqQM+PwNTV59AZoNrfTe/0rLjs+cX6Y6yAdZSRPBwr5L3JzYeU1TTcFCVQTtsE7KF8ddVP8sD7w9pi8rOWLA==}
-    peerDependencies:
-      lexical: 0.13.1
-      yjs: '>=13.5.22'
-    dependencies:
-      '@lexical/offset': 0.13.1(lexical@0.13.1)
-      lexical: 0.13.1
-      yjs: 13.6.12
-    dev: false
 
   /@next/env@14.1.0:
     resolution: {integrity: sha512-Py8zIo+02ht82brwwhTg36iogzFqGLPXlRGKQw5s+qP/kMNc4MAyDeEwBKDijk6zTIbegEgu8Qy7C1LboslQAw==}
@@ -523,279 +287,6 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@tsparticles/basic@3.2.1:
-    resolution: {integrity: sha512-Hg7qg8bnIjgA+M5+eW49hmm6J2njXW0PfiefO91quujzbY6gKgysuO44j+VKs5lZubUS4m3WybyXuG2qvc0blg==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-      '@tsparticles/move-base': 3.2.1
-      '@tsparticles/shape-circle': 3.2.1
-      '@tsparticles/updater-color': 3.2.1
-      '@tsparticles/updater-opacity': 3.2.1
-      '@tsparticles/updater-out-modes': 3.2.1
-      '@tsparticles/updater-size': 3.2.1
-    dev: false
-
-  /@tsparticles/engine@3.2.1:
-    resolution: {integrity: sha512-mVzdwkOtRdT6/UOS0+GPGcKJsdvYCkqTTwg7df43TfXixsdZedpUkuVg30rwtNhTgPMH2nimOXqx2wmgL7bAZw==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    requiresBuild: true
-    dev: false
-
-  /@tsparticles/interaction-external-attract@3.2.1:
-    resolution: {integrity: sha512-u3Nc8ZRqaZeV6aOG44lrbjLyyGsDmL/k5YUHpynf8B1h2P7Rh4CUlz1FfFkbyFEe/bxoopTMl3IAGPfH+ZpzYA==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-external-bounce@3.2.1:
-    resolution: {integrity: sha512-quDVwQpaLcVYFHdPYSM3vEAqRrHPMDsfjpzvtLhAuXVvGX0FW4HLBFF1uuIQg6UTDKaVZSPcw6Y8A8zbUItRmw==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-external-bubble@3.2.1:
-    resolution: {integrity: sha512-Z5/clQcfQF8ldk1QjXl6cRi/5fH92uL6Ev/W6zskY6L1RG3Y8jisHLU44tWFwXleONu/NB+IDFn39Ei6uNjmzQ==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-external-connect@3.2.1:
-    resolution: {integrity: sha512-tY//lUEcu3ZbKFvDc1bUhS9r2LdiwN4jsBU0o4JuGKBWPH/Cd0P9sUVIthEsoxf1lY/6xCV5AgBP8SA+o3Cj2Q==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-external-grab@3.2.1:
-    resolution: {integrity: sha512-mau9wixUqy+mOiYGMofBUiQ9gsSk7pMkyHKtOZVrE6Lvi0JvJrIAjSndjsUKNt5GmB+kKJPTlPCaN5mpBY/iUQ==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-external-pause@3.2.1:
-    resolution: {integrity: sha512-vV5sAls6JyjueheYqeZsESVKhAQCl0Yz5h9yqFIBSllJ8sppVXqtMx/XcGyJValp2R0ptiI0jULAqTBtHqcQBg==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-external-push@3.2.1:
-    resolution: {integrity: sha512-BchfXv/ltD2oec9xz8mg3H8k7N/oYxNb2gTy8zqkdcnXLZzBlST8ApUx+PMvBh2pZ8LaqcGqVw1GK6/2PjL3zA==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-external-remove@3.2.1:
-    resolution: {integrity: sha512-NGKPhshUdh5ttatM448k8PxbdgWbAM2sVqpnMyEJQSXoYfDrheuKPg27l5+G+IqmmTnTqorWXmc6cxN+1Es2hg==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-external-repulse@3.2.1:
-    resolution: {integrity: sha512-HxGzjQuFpfTykHG0w5JPY3jpFNSr9wW4i8d9XHLjzlY/LHpDoRYfarAtpXtwUq0DyLFogZVkhbzo8+euP11PUA==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-external-slow@3.2.1:
-    resolution: {integrity: sha512-Fq3EyozDqwKfRZnnVixO81kxKHlR+N8HtBD2Ga2lJt4ZfncnUTRlyMjX49pL6Cj293o1RAboH1xfR9kyNDWTOQ==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-particles-attract@3.2.1:
-    resolution: {integrity: sha512-jbBI1RilgJbG/XkV73wmRwBfFWo86NtWqcbIcIwVku7+QtsllYVTpi1ty59JGqklLUWRYiz6i/4i8R31cZDCoA==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-particles-collisions@3.2.1:
-    resolution: {integrity: sha512-30YxBuIOD1XUOpjo5evv0j/5+/K6VP29lAlmxmGDx7EWaInG9UwldJo+lh+1A0xvEVr1hjNMaBOjD5Rbs1iN7A==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/interaction-particles-links@3.2.1:
-    resolution: {integrity: sha512-Py4BLQZbcipVyJ1PrIEPbYzzLDBy/jKIdnaGYRBCgZyf4zuTK5UvACPLS5zeiXXzCh4kx3LBM1z96zMOmJdNsw==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/move-base@3.2.1:
-    resolution: {integrity: sha512-R+ALCs7eJTehoNDNJ6kcGESaLY3kNYmj1OkYwe7XIHSYCpRAq93jRj5NEVqrVTxk1ZIPt8pYdkerDlBuSphDEg==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/move-parallax@3.2.1:
-    resolution: {integrity: sha512-q7ipu/avG2TzPauQpLUVjpLRJeFha8k7IdnpRns1Q286eWgHT0X/6A+qgroV+JLhUkTT9kdGVQGdOntHaOvgkQ==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/plugin-easing-quad@3.2.1:
-    resolution: {integrity: sha512-l9NPrOh+6PI7v2GGq5GDliimhH+sFg9EUfH0jmsS3ZBMl/jWsD97RdTzutARMelH+PEZKGCtURKj2F0rzQtYtQ==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/react@3.0.0(@tsparticles/engine@3.2.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-hjGEtTT1cwv6BcjL+GcVgH++KYs52bIuQGW3PWv7z3tMa8g0bd6RI/vWSLj7p//NZ3uTjEIeilYIUPBh7Jfq/Q==}
-    peerDependencies:
-      '@tsparticles/engine': ^3.0.2
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@tsparticles/shape-circle@3.2.1:
-    resolution: {integrity: sha512-DgO21XrwZ5nX/BfO9ItXV3AEhZmTXX0yHf+ogvKiwkkhd9qqCL9yDSAwwUqOPlU5St6AoAWKp8QCByFE7icl6g==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/shape-emoji@3.2.1:
-    resolution: {integrity: sha512-55q5eCQQvEZpk3WO8aMhqGmkca1BRd9az3itZDWJRhi74n+2sln4JYpWgqpEbsWHCP95z/IaVpkLiZalq2Wepw==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/shape-image@3.2.1:
-    resolution: {integrity: sha512-mWBVikRQTIlhHKFlNE5WPOPGwUGdyDKPxAEC1XFJnx7juPADaaLiGaQtc8bgbCRpe7GLALaWwyvn1KmGxBnFlw==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/shape-line@3.2.1:
-    resolution: {integrity: sha512-q1UWB3OT/MDi7vklEiYFWFyjHAQpkLx/lPCU2yzAxU8ikv6XhrbFMNL1/41ozrKoBIAEA50ADn9s7D8W4ZGq/Q==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/shape-polygon@3.2.1:
-    resolution: {integrity: sha512-j8dNbnP03Q8iRde4YiegKP1a6tIZ86m6pqqIFqSJk+Lz2V0EN4Wv2pJMUklyP60VMll4SwBAJO1aLlIdqedSAQ==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/shape-square@3.2.1:
-    resolution: {integrity: sha512-b6QDajcALbOAUsiKipZLrp6rzl5dbDmwWRjkU7dzrnxfWtkQQShxEGVtn0jOGJQnTQOwB/voce1UgAVjvyNDkQ==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/shape-star@3.2.1:
-    resolution: {integrity: sha512-iqVsZiQFTLyc3wiU46P8l4k3zl8hJc57WROgQiHCcJxbps8DmlPZhLzaLPE03WgvPSfUQfc8QVtojdNaQh406g==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/slim@3.2.1:
-    resolution: {integrity: sha512-XChPCNOybUFRp7SSbHICnlxGfG0ay0iFBH3kKn5hJ4Wsp8SOGg5vaJlLoArLvL7A555J4kEc5uFdpSRsJDdwKg==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/basic': 3.2.1
-      '@tsparticles/engine': 3.2.1
-      '@tsparticles/interaction-external-attract': 3.2.1
-      '@tsparticles/interaction-external-bounce': 3.2.1
-      '@tsparticles/interaction-external-bubble': 3.2.1
-      '@tsparticles/interaction-external-connect': 3.2.1
-      '@tsparticles/interaction-external-grab': 3.2.1
-      '@tsparticles/interaction-external-pause': 3.2.1
-      '@tsparticles/interaction-external-push': 3.2.1
-      '@tsparticles/interaction-external-remove': 3.2.1
-      '@tsparticles/interaction-external-repulse': 3.2.1
-      '@tsparticles/interaction-external-slow': 3.2.1
-      '@tsparticles/interaction-particles-attract': 3.2.1
-      '@tsparticles/interaction-particles-collisions': 3.2.1
-      '@tsparticles/interaction-particles-links': 3.2.1
-      '@tsparticles/move-parallax': 3.2.1
-      '@tsparticles/plugin-easing-quad': 3.2.1
-      '@tsparticles/shape-emoji': 3.2.1
-      '@tsparticles/shape-image': 3.2.1
-      '@tsparticles/shape-line': 3.2.1
-      '@tsparticles/shape-polygon': 3.2.1
-      '@tsparticles/shape-square': 3.2.1
-      '@tsparticles/shape-star': 3.2.1
-      '@tsparticles/updater-life': 3.2.1
-      '@tsparticles/updater-rotate': 3.2.1
-      '@tsparticles/updater-stroke-color': 3.2.1
-    dev: false
-
-  /@tsparticles/updater-color@3.2.1:
-    resolution: {integrity: sha512-IVUMmCR4amASTkZ/Fhs2Zu6VywRjkC54lJNpZ86jNONhzdHC4bGAmporMfEsNoa2stsPRZpMHvQCSD5dYoSbZg==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/updater-life@3.2.1:
-    resolution: {integrity: sha512-FvdFDvt8zFpel7LgtiVbZil7kkPtom9BVtnIw5r1lGwluSLTkzamwhtvp7KCudSBRZ6PziX4QUWaVk/NI4njxQ==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/updater-opacity@3.2.1:
-    resolution: {integrity: sha512-cvwx21T4bn8s5TArQq3Gq0Zy/WDjqT/S/9jsZcLKC5xgYcpTKptTtWeNaOxSbLR7WRrmIKSx9gUhz6SwHvTePw==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/updater-out-modes@3.2.1:
-    resolution: {integrity: sha512-y1+K05ao6z/oRvl6dBVrXLVQ33Rt9dpPDVJfMeGI9EyafZAzbX28ohBPm+K7pXbXDeoUnSPrKC160KOPPRsGgA==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/updater-rotate@3.2.1:
-    resolution: {integrity: sha512-oVHe6kLFTJz6mfuVBImYVxhqFYeres5d3KyptLIzVguSPG5NNN5ZSBULD/CjjSlFeRCaZNdhLGLCvquxaD1/7A==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/updater-size@3.2.1:
-    resolution: {integrity: sha512-GqkNEjGttjQBdFSteZ6WdhciJqKDTniha2B1vHZrEd+XDoSFwb8JwVw+kdMwHshNfsL4cuM3zQypGMVoQOcldg==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
-  /@tsparticles/updater-stroke-color@3.2.1:
-    resolution: {integrity: sha512-niG2IVlh8O0xCHnTDtfOXxbMWKESCiXTjRouuJfTch1qDEuIMVOwDpynHAemQcVKLiHLAzfJf2b8A6K74+3N+A==}
-    deprecated: 3.2.0 and 3.2.1 have issues with some bundlers, deprecating those until solved with 3.2.2
-    dependencies:
-      '@tsparticles/engine': 3.2.1
-    dev: false
-
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
@@ -960,10 +451,6 @@ packages:
       has-symbols: 1.0.3
     dev: true
 
-  /asynckit@0.4.0:
-    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
-    dev: false
-
   /autobind-decorator@2.4.0:
     resolution: {integrity: sha512-OGYhWUO72V6DafbF8PM8rm3EPbfuyMZcJhtm5/n26IDwO18pohE4eNazLoCGhPiXOCD0gEGmrbU3849QvM8bbw==}
     engines: {node: '>=8.10', npm: '>=6.4.1'}
@@ -978,16 +465,6 @@ packages:
     resolution: {integrity: sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==}
     engines: {node: '>=4'}
     dev: true
-
-  /axios@1.6.7:
-    resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
-    dependencies:
-      follow-redirects: 1.15.5
-      form-data: 4.0.0
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-    dev: false
 
   /axobject-query@3.2.1:
     resolution: {integrity: sha512-jsyHu61e6N4Vbz/v18DHwWYKK0bSWLqn47eeDSKPB7m8tqMHF9YJ+mhIk2lVteyZrY8tnSj/jHOv4YiTCuCJgg==}
@@ -1055,13 +532,6 @@ packages:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
 
-  /combined-stream@1.0.8:
-    resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
-    engines: {node: '>= 0.8'}
-    dependencies:
-      delayed-stream: 1.0.0
-    dev: false
-
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
@@ -1128,11 +598,6 @@ packages:
       has-property-descriptors: 1.0.1
       object-keys: 1.1.1
     dev: true
-
-  /delayed-stream@1.0.0:
-    resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
-    engines: {node: '>=0.4.0'}
-    dev: false
 
   /dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
@@ -1566,30 +1031,11 @@ packages:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
-  /follow-redirects@1.15.5:
-    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dev: false
-
   /for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
     dependencies:
       is-callable: 1.2.7
     dev: true
-
-  /form-data@4.0.0:
-    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
-    engines: {node: '>= 6'}
-    dependencies:
-      asynckit: 0.4.0
-      combined-stream: 1.0.8
-      mime-types: 2.1.35
-    dev: false
 
   /fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
@@ -1913,10 +1359,6 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
-  /isomorphic.js@0.2.5:
-    resolution: {integrity: sha512-PIeMbHqMt4DnUP3MA/Flc0HElYjMXArsw1qwJZcm9sqR8mq3l8NYizFMty0pWwE/tzIGH3EKK5+jes5mAr85yw==}
-    dev: false
-
   /iterator.prototype@1.1.2:
     resolution: {integrity: sha512-DR33HMMr8EzwuRL8Y9D3u2BMj8+RqSE850jfGu59kS7tbmPLzGkZmVSfyCFSDxuZiEY6Rzt3T2NA/qU+NwVj1w==}
     dependencies:
@@ -2008,18 +1450,6 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /lexical@0.13.1:
-    resolution: {integrity: sha512-jaqRYzVEfBKbX4FwYpd/g+MyOjRaraAel0iQsTrwvx3hyN0bswUZuzb6H6nGlFSjcdrc77wKpyKwoWj4aUd+Bw==}
-    dev: false
-
-  /lib0@0.2.89:
-    resolution: {integrity: sha512-5j19vcCjsQhvLG6mcDD+nprtJUCbmqLz5Hzt5xgi9SV6RIW/Dty7ZkVZHGBuPOADMKjQuKDvuQTH495wsmw8DQ==}
-    engines: {node: '>=16'}
-    hasBin: true
-    dependencies:
-      isomorphic.js: 0.2.5
-    dev: false
-
   /locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
@@ -2036,18 +1466,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-
-  /mime-db@1.52.0:
-    resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
-    engines: {node: '>= 0.6'}
-    dev: false
-
-  /mime-types@2.1.35:
-    resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
-    engines: {node: '>= 0.6'}
-    dependencies:
-      mime-db: 1.52.0
-    dev: false
 
   /minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
@@ -2260,11 +1678,6 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prismjs@1.29.0:
-    resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
-    engines: {node: '>=6'}
-    dev: false
-
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
     dependencies:
@@ -2272,10 +1685,6 @@ packages:
       object-assign: 4.1.1
       react-is: 16.13.1
     dev: true
-
-  /proxy-from-env@1.1.0:
-    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
-    dev: false
 
   /punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
@@ -2294,16 +1703,6 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-    dev: false
-
-  /react-error-boundary@3.1.4(react@18.2.0):
-    resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
-    engines: {node: '>=10', npm: '>=6'}
-    peerDependencies:
-      react: '>=16.13.1'
-    dependencies:
-      '@babel/runtime': 7.23.9
-      react: 18.2.0
     dev: false
 
   /react-icons@5.0.1(react@18.2.0):
@@ -2340,6 +1739,7 @@ packages:
 
   /regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
+    dev: true
 
   /regexp.prototype.flags@1.5.2:
     resolution: {integrity: sha512-NcDiDkTLuPR+++OCKB0nWafEmhg/Da8aUPLPMQbK+bxKKCm1/S5he+AqYa4PlMCVBalb4/yxIRub6qkEx5yJbw==}
@@ -2742,13 +2142,6 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
-    dev: false
-
-  /yjs@13.6.12:
-    resolution: {integrity: sha512-KOT8ILoyVH2f/PxPadeu5kVVS055D1r3x1iFfJVJzFdnN98pVGM8H07NcKsO+fG3F7/0tf30Vnokf5YIqhU/iw==}
-    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
-    dependencies:
-      lib0: 0.2.89
     dev: false
 
   /yocto-queue@0.1.0:
