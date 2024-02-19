@@ -15,6 +15,7 @@ export default function Home() {
     const sayUnderConstruction = () => {
         toast.info('This is a work in progess !');
     };
+
     useTimeout(sayUnderConstruction, 2000);
 
     return (
@@ -26,13 +27,6 @@ export default function Home() {
 
             <div className={styles.right}>
                 <DeveloperDescription />
-                <DeveloperDescription />
-
-                <DeveloperDescription />
-                {' '}
-                <DeveloperDescription />
-                <DeveloperDescription />
-
             </div>
         </div>
     );

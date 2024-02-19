@@ -5,3 +5,9 @@
     gap: 16px;
     margin-bottom: 36px;
 }
+
+@media (max-width:470px) {
+    .contact {
+        margin-bottom: 12px;
+    }
+}

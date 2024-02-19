@@ -1,6 +1,6 @@
 .page {
     display: flex;
-    gap: 2rem;
+    gap: 1.6rem;
     max-width: 80%;
     height: 100%;
     padding-top: 56px;
@@ -16,4 +16,36 @@
 .right {
     width: 50%;
     overflow: auto;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.right::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+@media (max-width:1024px) {
+    .page {
+        flex-direction: column;
+        padding-top: 36px;
+        max-width: 90%;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        gap: 36px;
+    }
+}
+
+@media (max-width:47px) {
+    .page {
+        margin-top: 26px;
+    }
 }

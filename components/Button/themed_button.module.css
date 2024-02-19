@@ -37,14 +37,14 @@
     border: 1px solid #0000001a;
 }
 
-@media (max-width:767px) {
+@media (max-width:1024px) {
     .button {
         font-size: 16px;
 
     }
 
     .linear {
-        min-width: 220px;
+        min-width: 100px;
     }
 
     .circular {

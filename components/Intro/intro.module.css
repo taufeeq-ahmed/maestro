@@ -7,7 +7,7 @@
 }
 
 .developer_name {
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .developer_title {
@@ -46,17 +46,8 @@
     gap: 12px;
 }
 
-@media (max-width:767px) {
-    .intro {
-        margin-top: 16px;
-    }
-
-    .intro_description {
-        width: 100%;
-        font-size: 18px;
-    }
-
-    .action_buttons {
-        flex-direction: column;
+@media (max-width:470px) {
+    .developer_name {
+        font-size: 32px;
     }
 }
