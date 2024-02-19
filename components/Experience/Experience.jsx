@@ -16,22 +16,6 @@ const DEFAULT_COMPANY = {
             ],
             link: 'https://academy.cogoport.com',
         },
-        {
-            title: 'Cogo Academy',
-            description: 'Cogo Academy is a platform designed to train and evaluate new tech interns within the company. It is built with training modules and inbuilt compilers, offering a fully scalable solution for training new employees.',
-            techStack: [
-                'NextJS', 'PostgresQL', 'NodeJS', 'FastAPI',
-            ],
-            link: 'https://academy.cogoport.com',
-        },
-        {
-            title: 'Cogo Academy',
-            description: 'Cogo Academy is a platform designed to train and evaluate new tech interns within the company. It is built with training modules and inbuilt compilers, offering a fully scalable solution for training new employees.',
-            techStack: [
-                'NextJS', 'PostgresQL', 'NodeJS', 'FastAPI',
-            ],
-            link: 'https://academy.cogoport.com',
-        },
     ],
 };
 
