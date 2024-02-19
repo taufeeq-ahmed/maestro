@@ -1,0 +1,21 @@
+.experience {
+    margin-top: 56px;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.company_name {
+    color: #55d4d5;
+    margin-bottom: 0;
+}
+
+.company_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

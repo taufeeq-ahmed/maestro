@@ -10,6 +10,7 @@ import useTimeout from '@/hooks/useTimeout';
 import Contact from '@/components/Contact/Contact';
 import styles from './page.module.css';
 import DeveloperDescription from '@/components/DeveloperDescription/DeveloperDescription';
+import Experience from '@/components/Experience/Experience';
 
 export default function Home() {
     const sayUnderConstruction = () => {
@@ -27,6 +28,7 @@ export default function Home() {
 
             <div className={styles.right}>
                 <DeveloperDescription />
+                <Experience />
             </div>
         </div>
     );
