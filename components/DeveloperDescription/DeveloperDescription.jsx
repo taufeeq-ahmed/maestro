@@ -14,7 +14,7 @@ function DeveloperDescription() {
                 My main focus these days is building products at Cogoport. I enjoy creating software where design and engineering converge — things that look good but are also well-built under the hood. In my free time, I&apos;ve also explored various development environments such as Jetpack Compose, SwiftUI, ElectronJS, and many more.
             </p>
             <p>
-                When I&apos;m not at the computer, I&apos;m usually watching a lot of movies, playing Badminton
+                When I&apos;m not at the computer, I&apos;m usually watching a lot of sci-fi movies or playing Badminton
             </p>
             <p>
                 Here are the languages and frameworks I have worked with
