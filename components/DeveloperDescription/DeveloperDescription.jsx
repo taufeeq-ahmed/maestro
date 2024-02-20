@@ -1,6 +1,8 @@
+/* eslint-disable import/extensions */
 /* eslint-disable max-len */
 import React from 'react';
 import styles from './developerdescription.module.css';
+import { MY_SKILLS } from '@/app/constants/constants';
 
 function DeveloperDescription() {
     return (
@@ -16,6 +18,18 @@ function DeveloperDescription() {
             <p>
                 When I&apos;m not at the computer, I&apos;m usually watching a lot of movies, playing Badminton
             </p>
+            <p>
+                Here are the languages and frameworks I worked with
+                {' :'}
+            </p>
+            <div className={styles.skills}>
+                {MY_SKILLS.map((skill) => (
+                    <div className={styles.tech_pill}>
+                        {skill}
+                    </div>
+                ))}
+            </div>
+
         </section>
     );
 }

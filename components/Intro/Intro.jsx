@@ -15,7 +15,6 @@ function Intro() {
             <p className={styles.intro_description}>
                 Making the world a better place one software at a time
             </p>
-
         </section>
     );
 }
