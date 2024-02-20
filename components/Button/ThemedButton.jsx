@@ -6,7 +6,10 @@ import Link from 'next/link';
 import styles from './themed_button.module.css';
 
 function ThemedButton({
-    type = 'colored', text = '', icon, shape = 'linear', link, handleClick, style = {},
+    type = 'colored',
+    text = '', icon, shape = 'linear',
+    link, handleClick, style = {},
+    ariaLabel,
 }) {
     const typeClass = type === 'acrylic' ? styles.acrylic_button : styles.colored_button;
     const shapeClass = shape === 'circular' ? styles.circular : styles.linear;
@@ -18,6 +21,7 @@ function ThemedButton({
                 className={`${styles.button} ${typeClass} ${shapeClass}`}
                 type="button"
                 style={style}
+                aria-label={ariaLabel}
             >
                 {text}
                 {icon}
@@ -26,11 +30,16 @@ function ThemedButton({
     }
 
     return (
-        <Link href={link} target="_blank">
+        <Link
+            href={link}
+            target="_blank"
+            aria-label={ariaLabel}
+        >
             <button
                 className={`${styles.button} ${typeClass} ${shapeClass}`}
                 type="button"
                 style={style}
+                aria-label={ariaLabel}
             >
                 {text}
                 {icon}

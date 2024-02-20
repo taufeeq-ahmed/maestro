@@ -35,18 +35,21 @@ function Contact() {
                 type="acrylic"
                 icon={<FaGithub />}
                 link={GITHUB_LINK}
+                arialLabel="github_link"
             />
             <ThemedButton
                 shape="circular"
                 type="acrylic"
                 icon={<FaLinkedin />}
                 link={LINKEDIN_LINK}
+                arialLabel="linkedin_link"
             />
             <ThemedButton
                 shape="circular"
                 type="acrylic"
                 icon={<MdOutlineMailOutline />}
                 link={GMAIL_LINK}
+                arialLabel="gmail_link"
             />
         </section>
     );
