@@ -2,24 +2,7 @@ import React from 'react';
 import styles from './experience.module.css';
 import ProjectCard from './ProjectCard/ProjectCard';
 
-const DEFAULT_COMPANY = {
-    start: 'MAR 2023',
-    end: 'DEC-2023',
-    name: 'Cogoport',
-    designation: 'SDE-1',
-    projects: [
-        {
-            title: 'Cogo Academy',
-            description: 'Cogo Academy is a platform designed to train and evaluate new tech interns within the company. It is built with training modules and inbuilt compilers, offering a fully scalable solution for training new employees.',
-            techStack: [
-                'NextJS', 'PostgresQL', 'NodeJS', 'FastAPI',
-            ],
-            link: 'https://academy.cogoport.com',
-        },
-    ],
-};
-
-function Experience({ companies = [DEFAULT_COMPANY] }) {
+function Experience({ companies }) {
     return (
         <section className={styles.experience}>
             {companies.map((company) => {

@@ -3,7 +3,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdFileDownload, MdOutlineMailOutline } from 'react-icons/md';
 import styles from './constact.module.css';
-import { githubLink, gmailLink, linkedinLink } from '@/app/constants/constants';
+import { GITHUB_LINK, GMAIL_LINK, LINKEDIN_LINK } from '@/app/constants/constants';
 import ThemedButton from '../Button/ThemedButton';
 
 function Contact() {
@@ -34,19 +34,19 @@ function Contact() {
                 shape="circular"
                 type="acrylic"
                 icon={<FaGithub />}
-                link={githubLink}
+                link={GITHUB_LINK}
             />
             <ThemedButton
                 shape="circular"
                 type="acrylic"
                 icon={<FaLinkedin />}
-                link={linkedinLink}
+                link={LINKEDIN_LINK}
             />
             <ThemedButton
                 shape="circular"
                 type="acrylic"
                 icon={<MdOutlineMailOutline />}
-                link={gmailLink}
+                link={GMAIL_LINK}
             />
         </section>
     );
