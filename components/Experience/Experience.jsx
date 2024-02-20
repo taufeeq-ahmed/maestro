@@ -17,10 +17,12 @@ function Experience({ companies }) {
                         <h3 className={styles.company_name}>
                             {name}
                         </h3>
-                        <p>
-                            {`${designation} : ${start} - ${end}`}
-                            {' '}
-                        </p>
+                        {start && end && designation && (
+                            <p>
+                                {`${designation} : ${start} - ${end}`}
+                                {' '}
+                            </p>
+                        )}
                         <div className={styles.company_details}>
                             <div className={styles.projects}>
                                 {projects.map((pc) => (
