@@ -11,7 +11,7 @@ import Contact from '@/components/Contact/Contact';
 import styles from './page.module.css';
 import DeveloperDescription from '@/components/DeveloperDescription/DeveloperDescription';
 import Experience from '@/components/Experience/Experience';
-import { EXPERIENCE } from './constants/constants';
+import { EXPERIENCE } from '../constants/constants';
 
 export default function Home() {
     const sayUnderConstruction = () => {

@@ -3,7 +3,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdFileDownload, MdOutlineMailOutline } from 'react-icons/md';
 import styles from './constact.module.css';
-import { GITHUB_LINK, GMAIL_LINK, LINKEDIN_LINK } from '@/app/constants/constants';
+import { GITHUB_LINK, GMAIL_LINK, LINKEDIN_LINK } from '@/constants/constants';
 import ThemedButton from '../Button/ThemedButton';
 
 function Contact() {

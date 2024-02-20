@@ -2,7 +2,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styles from './developerdescription.module.css';
-import { MY_SKILLS } from '@/app/constants/constants';
+import { MY_SKILLS } from '@/constants/constants';
 
 function DeveloperDescription() {
     return (
