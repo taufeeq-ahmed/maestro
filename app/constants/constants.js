@@ -7,7 +7,6 @@ const MY_SKILLS = [
     'ReactJS', 'NextJS', 'TailwindCSS',
     'NodeJS', 'ExpressJS', 'FastifyAPI', 'Spring Boot',
     'MySQL', 'PostgresQL', 'MongoDB', 'Firebase',
-    'OOPS', 'REST API',
 ];
 
 const EXPERIENCE = [{
