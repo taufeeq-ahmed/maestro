@@ -1,5 +1,6 @@
 .experience {
     margin-top: 56px;
+    margin-bottom: 32px;
 }
 
 .company {
@@ -18,4 +19,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:1024px) {
+    .experience {
+        margin-bottom: 56px;
+    }
 }
