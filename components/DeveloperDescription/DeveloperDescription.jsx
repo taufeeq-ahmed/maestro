@@ -22,7 +22,10 @@ function DeveloperDescription() {
             </p>
             <div className={styles.skills}>
                 {MY_SKILLS.map((skill) => (
-                    <div className={styles.tech_pill}>
+                    <div
+                        className={styles.tech_pill}
+                        key={JSON.stringify(skill)}
+                    >
                         {skill}
                     </div>
                 ))}

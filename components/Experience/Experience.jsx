@@ -10,7 +10,10 @@ function Experience({ companies }) {
                     start, end, projects, name, designation,
                 } = company;
                 return (
-                    <div className={styles.company}>
+                    <div
+                        className={styles.company}
+                        key={JSON.stringify(company)}
+                    >
                         <h3 className={styles.company_name}>
                             {name}
                         </h3>
@@ -21,7 +24,10 @@ function Experience({ companies }) {
                         <div className={styles.company_details}>
                             <div className={styles.projects}>
                                 {projects.map((pc) => (
-                                    <ProjectCard project={pc} />
+                                    <ProjectCard
+                                        project={pc}
+                                        key={JSON.stringify(pc)}
+                                    />
                                 ))}
                             </div>
                         </div>

@@ -20,7 +20,10 @@ function ProjectCard({ project }) {
                 <p className={styles.project_description}>{description}</p>
                 <div className={styles.tech_stack}>
                     {techStack.map((ts) => (
-                        <div className={styles.tech_pill}>
+                        <div
+                            className={styles.tech_pill}
+                            key={JSON.stringify(ts)}
+                        >
                             {ts}
                         </div>
                     ))}
