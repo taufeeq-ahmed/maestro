@@ -8,12 +8,12 @@ import ThemedButton from '../Button/ThemedButton';
 
 function Contact() {
     const handleDownload = () => {
-        const pdfPath = '/assets/imjst.resume.pdf';
+        const pdfPath = '/assets/Taufeeq-Ahmed-Resume.pdf';
 
         const link = document.createElement('a');
         link.href = pdfPath;
         link.target = '_blank';
-        link.download = 'taufeeq.resume.pdf';
+        link.download = 'taufeeq-ahmed-resume.pdf';
 
         document.body.appendChild(link);
         link.click();
