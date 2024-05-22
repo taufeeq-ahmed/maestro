@@ -3,10 +3,10 @@ const LINKEDIN_LINK = 'https://www.linkedin.com/in/taufeeq-ahmed-imjst/';
 const GMAIL_LINK = 'mailto:themaestrotaufeeq@gmail.com';
 
 const MY_SKILLS = [
-    'C', 'C++', 'Java', 'Javascript', 'Python', 'Kotlin',
-    'ReactJS', 'NextJS', 'TailwindCSS',
-    'NodeJS', 'ExpressJS', 'FastifyAPI', 'Spring Boot',
-    'MySQL', 'PostgresQL', 'MongoDB', 'Firebase',
+    'Java', 'Javascript', 'Typescript', 'Python',
+    'ReactJS', 'NextJS',
+    'NodeJS', 'ExpressJS', 'Spring Boot',
+    'PostgresQL', 'MongoDB', 'Firebase', 'NATS', 'Docker', 'Kubernetes',
 ];
 
 const EXPERIENCE = [
@@ -72,6 +72,14 @@ const EXPERIENCE = [
         name: 'Personal Projects',
         designation: '',
         projects: [
+            {
+                title: 'Auth Microservice ',
+                description: 'An event-driven authentication microservice built in Node.js. NATS is integrated for handling events. Containerized using Docker and Kubernetes ',
+                techStack: [
+                    'NodeJS', 'Typescript', 'MongoDB', 'NATS', 'Docker', 'Kubernetes',
+                ],
+                link: 'https://github.com/taufeeq-ahmed/tickets-microservice',
+            },
             {
                 title: 'Motes ',
                 description: 'A note taking app built for macOS that supports markdown',
