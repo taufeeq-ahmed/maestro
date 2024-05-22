@@ -8,7 +8,7 @@ import ThemedButton from '../Button/ThemedButton';
 
 function Contact() {
     const handleDownload = () => {
-        const pdfPath = '/assets/Taufeeq-Ahmed-Resume.pdf';
+        const pdfPath = '/assets/taufeeq-ahmed-resume.pdf';
 
         const link = document.createElement('a');
         link.href = pdfPath;
