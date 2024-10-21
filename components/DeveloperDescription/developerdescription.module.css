@@ -10,7 +10,7 @@
 .skills {
     display: flex;
     gap: 14px;
-    justify-content: center;
+
     align-items: center;
     flex-wrap: wrap;
     flex: 1;
@@ -19,7 +19,7 @@
 .tech_pill {
     color: #55d4d4;
     background-color: rgba(28, 53, 83, 0.5);
-    border-radius: 16px;
+    border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 4px 16px;
     font-size: 12px;

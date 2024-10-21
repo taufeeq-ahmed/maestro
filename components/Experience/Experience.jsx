@@ -18,10 +18,11 @@ function Experience({ companies }) {
                             {name}
                         </h3>
                         {start && end && designation && (
-                            <p>
-                                {`${designation} : ${start} - ${end}`}
-                                {' '}
-                            </p>
+                            <div>
+                                <p>
+                                    {`${designation} : ${start} - ${end}`}
+                                </p>
+                            </div>
                         )}
                         <div className={styles.company_details}>
                             <div className={styles.projects}>

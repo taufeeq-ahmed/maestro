@@ -1,6 +1,6 @@
 const GITHUB_LINK = 'https://github.com/taufeeq-ahmed';
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/taufeeq-ahmed-imjst/';
-const GMAIL_LINK = 'mailto:themaestrotaufeeq@gmail.com';
+const GMAIL_LINK = 'mailto:io.taufeeq.ahmed@gmail.com';
 
 const MY_SKILLS = [
     'Java', 'Javascript', 'Typescript', 'Python',
@@ -11,8 +11,32 @@ const MY_SKILLS = [
 
 const EXPERIENCE = [
     {
+        start: 'JUN 2023',
+        end: 'CURRENT',
+        name: 'Fibr.Ai',
+        designation: 'Senior Frontend Engineer',
+        projects: [
+            {
+                title: 'Personalized Dashbords',
+                description: 'Developed a Personalized Dashboard for controlling the A/B testing experience of the product and and helped Fibr.ai scale to a Revenue of 80K$ per month',
+                techStack: [
+                    'Typescript', 'Next.js',
+                ],
+                link: 'https://fibr.ai/',
+            },
+            {
+                title: 'UI Components',
+                description: 'Built a components library for standardizing the UI across the product and enforcing consistent visual experience in Typescript',
+                techStack: [
+                    'Typescript', 'Next.js',
+                ],
+                link: 'https://fibr.ai/',
+            },
+        ],
+    },
+    {
         start: 'MAR 2023',
-        end: 'DEC-2023',
+        end: 'JUN-2024',
         name: 'Cogoport',
         designation: 'SDE-1',
         projects: [
@@ -42,7 +66,7 @@ const EXPERIENCE = [
             },
             {
                 title: 'Container Tracking',
-                description: 'A system built for tracking international shipments across the oceans using container number. Built as rock solid web application that gives real time updates and sends users notifications regarding the same.',
+                description: 'A system built for tracking international shipments across the oceans using container number.',
                 techStack: [
                     'NextJS', 'PostgresQL', 'SpringBoot', 'Kotlin',
                 ],
@@ -55,14 +79,6 @@ const EXPERIENCE = [
                     'NextJS', 'PostgresQL', 'NodeJS', 'ExpressJS', 'cogoCMS',
                 ],
                 link: 'https://www.cogoport.com/en-IN/knowledge-center/resources/world-port-info',
-            },
-            {
-                title: 'World Shipping Lines',
-                description: 'Built Shipping Lines at Cogoport enabling customers to seamlessly know detailed information about 300+ shipping lines and frequent inbound/outbound ports',
-                techStack: [
-                    'NextJS', 'PostgresQL', 'NodeJS', 'ExpressJS', 'cogoCMS',
-                ],
-                link: 'https://www.cogoport.com/en-IN/knowledge-center/shipping-lines',
             },
         ],
     },
@@ -92,10 +108,16 @@ const EXPERIENCE = [
     },
 ];
 
+const CURRENT_COMPANY = 'Fibr.Ai';
+
+const CURRENT_ROLE = 'Senior Frontned Engineer';
+
 export {
     GITHUB_LINK,
     LINKEDIN_LINK,
     GMAIL_LINK,
     MY_SKILLS,
     EXPERIENCE,
+    CURRENT_COMPANY,
+    CURRENT_ROLE,
 };
