@@ -110,7 +110,7 @@ const EXPERIENCE = [
 
 const CURRENT_COMPANY = 'Fibr.Ai';
 
-const CURRENT_ROLE = 'Senior Frontned Engineer';
+const CURRENT_ROLE = 'Senior Frontend Engineer';
 
 export {
     GITHUB_LINK,
